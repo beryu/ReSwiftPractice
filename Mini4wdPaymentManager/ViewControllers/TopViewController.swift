@@ -87,14 +87,6 @@ extension TopViewController: StoreSubscriber {
     }
 }
 
-//// MARK: - UITableViewDelegate
-//
-//extension TopViewController {
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//    }
-//}
-
 // MARK: - UITableViewDataSource
 
 extension TopViewController {

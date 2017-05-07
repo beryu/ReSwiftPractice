@@ -15,9 +15,6 @@ class AddPaymentViewController: FormViewController, StoreSubscriber {
 
     // MARK: - Private properties
 
-//    @IBOutlet private weak var searchField: UITextField!
-//    @IBOutlet private weak var resultImageView: UIImageView!
-//    @IBOutlet private weak var resultTextView: UITextView!
     private var disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -86,16 +83,6 @@ class AddPaymentViewController: FormViewController, StoreSubscriber {
                 })
             }
 
-//        self.searchField.rx.text
-//            .throttle(2.0, latest: true, scheduler: MainScheduler.instance)
-//            .subscribe(onNext: { (text) in
-//                // Fetch part info
-//                guard let itemId = self.searchField.text, !itemId.isEmpty else {
-//                    return
-//                }
-//                store.dispatch(FetchPartAction(id: itemId))
-//            })
-//            .disposed(by: self.disposeBag)
     }
 
     override func viewWillAppear(_ animated: Bool) {
