@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8800944A1EBF00010029E0A7 /* PaymentActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880094491EBF00010029E0A7 /* PaymentActions.swift */; };
+		8800944C1EBF12510029E0A7 /* PaymentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8800944B1EBF12510029E0A7 /* PaymentState.swift */; };
+		8800944E1EBF13030029E0A7 /* PaymentReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8800944D1EBF13030029E0A7 /* PaymentReducer.swift */; };
+		880094501EBF16200029E0A7 /* AddPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8800944F1EBF16200029E0A7 /* AddPaymentViewController.swift */; };
+		880094531EBF16640029E0A7 /* AddPaymentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880094521EBF16640029E0A7 /* AddPaymentViewController.storyboard */; };
+		880094551EBF18E80029E0A7 /* TopViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880094541EBF18E80029E0A7 /* TopViewController.storyboard */; };
+		8800945A1EBF1B900029E0A7 /* PaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880094581EBF1B900029E0A7 /* PaymentCell.swift */; };
+		8800945B1EBF1B900029E0A7 /* PaymentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880094591EBF1B900029E0A7 /* PaymentCell.xib */; };
+		8800945E1EBF1C3A0029E0A7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8800945C1EBF1C3A0029E0A7 /* Alamofire.framework */; };
+		8800945F1EBF1C3A0029E0A7 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8800945D1EBF1C3A0029E0A7 /* AlamofireImage.framework */; };
+		880094611EBF1EBC0029E0A7 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880094601EBF1EBC0029E0A7 /* RxDataSources.framework */; };
+		881807801EB57644000E95EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818077F1EB57644000E95EA /* AppDelegate.swift */; };
+		881807821EB57644000E95EA /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881807811EB57644000E95EA /* TopViewController.swift */; };
+		881807871EB57644000E95EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881807861EB57644000E95EA /* Assets.xcassets */; };
+		8818078A1EB57644000E95EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881807881EB57644000E95EA /* LaunchScreen.storyboard */; };
+		881807931EB58E47000E95EA /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881807921EB58E47000E95EA /* ReSwift.framework */; };
+		886762B81EBF38EF009CE5A7 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886762B71EBF38EF009CE5A7 /* Eureka.framework */; };
+		886762BB1EBF4ED9009CE5A7 /* GeneralInfoFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886762BA1EBF4ED9009CE5A7 /* GeneralInfoFooterView.swift */; };
+		886762BD1EBF4EE8009CE5A7 /* GeneralInfoFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 886762BC1EBF4EE8009CE5A7 /* GeneralInfoFooterView.xib */; };
+		889D38811EBDD22600506AE7 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889D38801EBDD22600506AE7 /* State.swift */; };
+		889D38831EBDD39500506AE7 /* ReSwiftRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889D38821EBDD39500506AE7 /* ReSwiftRouter.framework */; };
+		889D38851EBDD5ED00506AE7 /* PartState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889D38841EBDD5ED00506AE7 /* PartState.swift */; };
+		889D38881EBDD6A000506AE7 /* PartReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889D38871EBDD6A000506AE7 /* PartReducer.swift */; };
+		889D388B1EBDD7A400506AE7 /* PartActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889D388A1EBDD7A400506AE7 /* PartActions.swift */; };
+		889D388E1EBDDBA100506AE7 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889D388C1EBDDBA100506AE7 /* APIKit.framework */; };
+		889D388F1EBDDBA100506AE7 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889D388D1EBDDBA100506AE7 /* Result.framework */; };
+		889D38911EBDDBF900506AE7 /* TamiyaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889D38901EBDDBF900506AE7 /* TamiyaRequest.swift */; };
+		889D38941EBDE72400506AE7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889D38921EBDE72400506AE7 /* RxCocoa.framework */; };
+		889D38951EBDE72400506AE7 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889D38931EBDE72400506AE7 /* RxSwift.framework */; };
+		889D38971EBDE96F00506AE7 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889D38961EBDE96F00506AE7 /* AppReducer.swift */; };
+		889D389A1EBDEAA500506AE7 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889D38991EBDEAA500506AE7 /* Routes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		880094461EBEF84F0029E0A7 /* Mini4wdPaymentManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mini4wdPaymentManager.entitlements; sourceTree = "<group>"; };
+		880094491EBF00010029E0A7 /* PaymentActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentActions.swift; sourceTree = "<group>"; };
+		8800944B1EBF12510029E0A7 /* PaymentState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentState.swift; sourceTree = "<group>"; };
+		8800944D1EBF13030029E0A7 /* PaymentReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentReducer.swift; sourceTree = "<group>"; };
+		8800944F1EBF16200029E0A7 /* AddPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentViewController.swift; sourceTree = "<group>"; };
+		880094521EBF16640029E0A7 /* AddPaymentViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddPaymentViewController.storyboard; sourceTree = "<group>"; };
+		880094541EBF18E80029E0A7 /* TopViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopViewController.storyboard; sourceTree = "<group>"; };
+		880094581EBF1B900029E0A7 /* PaymentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentCell.swift; sourceTree = "<group>"; };
+		880094591EBF1B900029E0A7 /* PaymentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentCell.xib; sourceTree = "<group>"; };
+		8800945C1EBF1C3A0029E0A7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		8800945D1EBF1C3A0029E0A7 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		880094601EBF1EBC0029E0A7 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
+		8818077C1EB57644000E95EA /* Mini4wdPaymentManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mini4wdPaymentManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8818077F1EB57644000E95EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		881807811EB57644000E95EA /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		881807861EB57644000E95EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		881807891EB57644000E95EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8818078B1EB57644000E95EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		881807921EB58E47000E95EA /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		886762B71EBF38EF009CE5A7 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		886762BA1EBF4ED9009CE5A7 /* GeneralInfoFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralInfoFooterView.swift; sourceTree = "<group>"; };
+		886762BC1EBF4EE8009CE5A7 /* GeneralInfoFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneralInfoFooterView.xib; sourceTree = "<group>"; };
+		889D38801EBDD22600506AE7 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		889D38821EBDD39500506AE7 /* ReSwiftRouter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwiftRouter.framework; path = Carthage/Build/iOS/ReSwiftRouter.framework; sourceTree = "<group>"; };
+		889D38841EBDD5ED00506AE7 /* PartState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartState.swift; sourceTree = "<group>"; };
+		889D38871EBDD6A000506AE7 /* PartReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartReducer.swift; sourceTree = "<group>"; };
+		889D388A1EBDD7A400506AE7 /* PartActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartActions.swift; sourceTree = "<group>"; };
+		889D388C1EBDDBA100506AE7 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		889D388D1EBDDBA100506AE7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		889D38901EBDDBF900506AE7 /* TamiyaRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TamiyaRequest.swift; path = ../TamiyaRequest.swift; sourceTree = "<group>"; };
+		889D38921EBDE72400506AE7 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		889D38931EBDE72400506AE7 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		889D38961EBDE96F00506AE7 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		889D38991EBDEAA500506AE7 /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		881807791EB57644000E95EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886762B81EBF38EF009CE5A7 /* Eureka.framework in Frameworks */,
+				8800945E1EBF1C3A0029E0A7 /* Alamofire.framework in Frameworks */,
+				8800945F1EBF1C3A0029E0A7 /* AlamofireImage.framework in Frameworks */,
+				880094611EBF1EBC0029E0A7 /* RxDataSources.framework in Frameworks */,
+				889D38941EBDE72400506AE7 /* RxCocoa.framework in Frameworks */,
+				889D38951EBDE72400506AE7 /* RxSwift.framework in Frameworks */,
+				889D388E1EBDDBA100506AE7 /* APIKit.framework in Frameworks */,
+				889D388F1EBDDBA100506AE7 /* Result.framework in Frameworks */,
+				889D38831EBDD39500506AE7 /* ReSwiftRouter.framework in Frameworks */,
+				881807931EB58E47000E95EA /* ReSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		880094471EBEFD450029E0A7 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				889D38901EBDDBF900506AE7 /* TamiyaRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		880094511EBF16410029E0A7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8800944F1EBF16200029E0A7 /* AddPaymentViewController.swift */,
+				880094521EBF16640029E0A7 /* AddPaymentViewController.storyboard */,
+				881807811EB57644000E95EA /* TopViewController.swift */,
+				880094541EBF18E80029E0A7 /* TopViewController.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		880094561EBF1B740029E0A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				886762B91EBF4EB5009CE5A7 /* TableViewHeaderFooterView */,
+				880094571EBF1B740029E0A7 /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		880094571EBF1B740029E0A7 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				880094581EBF1B900029E0A7 /* PaymentCell.swift */,
+				880094591EBF1B900029E0A7 /* PaymentCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		881807731EB57644000E95EA = {
+			isa = PBXGroup;
+			children = (
+				8818077E1EB57644000E95EA /* Mini4wdPaymentManager */,
+				8818077D1EB57644000E95EA /* Products */,
+				881807911EB58E47000E95EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8818077D1EB57644000E95EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8818077C1EB57644000E95EA /* Mini4wdPaymentManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8818077E1EB57644000E95EA /* Mini4wdPaymentManager */ = {
+			isa = PBXGroup;
+			children = (
+				880094511EBF16410029E0A7 /* ViewControllers */,
+				880094471EBEFD450029E0A7 /* Requests */,
+				889D38981EBDEA9600506AE7 /* Routes */,
+				889D38891EBDD79300506AE7 /* Actions */,
+				889D38861EBDD68900506AE7 /* Reducers */,
+				889D387F1EBDD1B800506AE7 /* States */,
+				880094561EBF1B740029E0A7 /* Views */,
+				8818077F1EB57644000E95EA /* AppDelegate.swift */,
+				881807861EB57644000E95EA /* Assets.xcassets */,
+				881807881EB57644000E95EA /* LaunchScreen.storyboard */,
+				880094461EBEF84F0029E0A7 /* Mini4wdPaymentManager.entitlements */,
+				8818078B1EB57644000E95EA /* Info.plist */,
+			);
+			path = Mini4wdPaymentManager;
+			sourceTree = "<group>";
+		};
+		881807911EB58E47000E95EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				886762B71EBF38EF009CE5A7 /* Eureka.framework */,
+				880094601EBF1EBC0029E0A7 /* RxDataSources.framework */,
+				8800945C1EBF1C3A0029E0A7 /* Alamofire.framework */,
+				8800945D1EBF1C3A0029E0A7 /* AlamofireImage.framework */,
+				889D38921EBDE72400506AE7 /* RxCocoa.framework */,
+				889D38931EBDE72400506AE7 /* RxSwift.framework */,
+				889D388C1EBDDBA100506AE7 /* APIKit.framework */,
+				889D388D1EBDDBA100506AE7 /* Result.framework */,
+				889D38821EBDD39500506AE7 /* ReSwiftRouter.framework */,
+				881807921EB58E47000E95EA /* ReSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		886762B91EBF4EB5009CE5A7 /* TableViewHeaderFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				886762BA1EBF4ED9009CE5A7 /* GeneralInfoFooterView.swift */,
+				886762BC1EBF4EE8009CE5A7 /* GeneralInfoFooterView.xib */,
+			);
+			path = TableViewHeaderFooterView;
+			sourceTree = "<group>";
+		};
+		889D387F1EBDD1B800506AE7 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				889D38801EBDD22600506AE7 /* State.swift */,
+				889D38841EBDD5ED00506AE7 /* PartState.swift */,
+				8800944B1EBF12510029E0A7 /* PaymentState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		889D38861EBDD68900506AE7 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				889D38961EBDE96F00506AE7 /* AppReducer.swift */,
+				889D38871EBDD6A000506AE7 /* PartReducer.swift */,
+				8800944D1EBF13030029E0A7 /* PaymentReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		889D38891EBDD79300506AE7 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				889D388A1EBDD7A400506AE7 /* PartActions.swift */,
+				880094491EBF00010029E0A7 /* PaymentActions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		889D38981EBDEA9600506AE7 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				889D38991EBDEAA500506AE7 /* Routes.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8818077B1EB57644000E95EA /* Mini4wdPaymentManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8818078E1EB57644000E95EA /* Build configuration list for PBXNativeTarget "Mini4wdPaymentManager" */;
+			buildPhases = (
+				881807781EB57644000E95EA /* Sources */,
+				881807791EB57644000E95EA /* Frameworks */,
+				8818077A1EB57644000E95EA /* Resources */,
+				881807941EB58E62000E95EA /* carthage copy-frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mini4wdPaymentManager;
+			productName = Mini4wdPaymentManager;
+			productReference = 8818077C1EB57644000E95EA /* Mini4wdPaymentManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		881807741EB57644000E95EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = blk;
+				TargetAttributes = {
+					8818077B1EB57644000E95EA = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 8A7X4PEZU7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 881807771EB57644000E95EA /* Build configuration list for PBXProject "Mini4wdPaymentManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 881807731EB57644000E95EA;
+			productRefGroup = 8818077D1EB57644000E95EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8818077B1EB57644000E95EA /* Mini4wdPaymentManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8818077A1EB57644000E95EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886762BD1EBF4EE8009CE5A7 /* GeneralInfoFooterView.xib in Resources */,
+				880094531EBF16640029E0A7 /* AddPaymentViewController.storyboard in Resources */,
+				880094551EBF18E80029E0A7 /* TopViewController.storyboard in Resources */,
+				8818078A1EB57644000E95EA /* LaunchScreen.storyboard in Resources */,
+				8800945B1EBF1B900029E0A7 /* PaymentCell.xib in Resources */,
+				881807871EB57644000E95EA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		881807941EB58E62000E95EA /* carthage copy-frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwiftRouter.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxDataSources.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+			);
+			name = "carthage copy-frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		881807781EB57644000E95EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880094501EBF16200029E0A7 /* AddPaymentViewController.swift in Sources */,
+				889D388B1EBDD7A400506AE7 /* PartActions.swift in Sources */,
+				881807821EB57644000E95EA /* TopViewController.swift in Sources */,
+				881807801EB57644000E95EA /* AppDelegate.swift in Sources */,
+				886762BB1EBF4ED9009CE5A7 /* GeneralInfoFooterView.swift in Sources */,
+				8800945A1EBF1B900029E0A7 /* PaymentCell.swift in Sources */,
+				889D38881EBDD6A000506AE7 /* PartReducer.swift in Sources */,
+				889D389A1EBDEAA500506AE7 /* Routes.swift in Sources */,
+				889D38911EBDDBF900506AE7 /* TamiyaRequest.swift in Sources */,
+				8800944C1EBF12510029E0A7 /* PaymentState.swift in Sources */,
+				8800944A1EBF00010029E0A7 /* PaymentActions.swift in Sources */,
+				889D38851EBDD5ED00506AE7 /* PartState.swift in Sources */,
+				889D38971EBDE96F00506AE7 /* AppReducer.swift in Sources */,
+				889D38811EBDD22600506AE7 /* State.swift in Sources */,
+				8800944E1EBF13030029E0A7 /* PaymentReducer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		881807881EB57644000E95EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				881807891EB57644000E95EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8818078C1EB57644000E95EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8818078D1EB57644000E95EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8818078F1EB57644000E95EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Mini4wdPaymentManager/Mini4wdPaymentManager.entitlements;
+				DEVELOPMENT_TEAM = 8A7X4PEZU7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Mini4wdPaymentManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.blk.Mini4wdPaymentManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		881807901EB57644000E95EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Mini4wdPaymentManager/Mini4wdPaymentManager.entitlements;
+				DEVELOPMENT_TEAM = 8A7X4PEZU7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Mini4wdPaymentManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.blk.Mini4wdPaymentManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		881807771EB57644000E95EA /* Build configuration list for PBXProject "Mini4wdPaymentManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8818078C1EB57644000E95EA /* Debug */,
+				8818078D1EB57644000E95EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8818078E1EB57644000E95EA /* Build configuration list for PBXNativeTarget "Mini4wdPaymentManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8818078F1EB57644000E95EA /* Debug */,
+				881807901EB57644000E95EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 881807741EB57644000E95EA /* Project object */;
+}

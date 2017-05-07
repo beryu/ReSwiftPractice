@@ -1,0 +1,7 @@
+github "ReSwift/ReSwift" ~> 3.0
+github "ReSwift/ReSwiftRouter"
+github "ishkawa/APIKit" ~> 3.0
+github "ReactiveX/RxSwift" ~> 3.0
+github "Alamofire/AlamofireImage" ~> 3.1
+github "RxSwiftCommunity/RxDataSources" ~> 1.0
+github "xmartlabs/Eureka" ~> 3.0
